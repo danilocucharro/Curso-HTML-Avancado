@@ -1,0 +1,94 @@
+<!--CRIANDO UMA TABELA-->
+<!--ATRIBUTO bgcolor = altera a cor do background da tabela-->
+<!--ATRIBUTO border = altera a espessura da borda pela unidade de medida em pixel-->
+<!--ATRIBUTO bordercolor = altera a cor da borda da tabela ou de linhas e células-->
+<!--ATRIBUTO background = coloca uma imagem no background da tabela-->
+<!--ATRIBUTO width e height = são usados para alterar a largura e altura da tabela, width(largura) e height(altura) podendo ser usados em celulas-->
+<!--ATRIBUTO align = altera o alinhamento da tabela em relação a pagina web, sendo right, center, left, pode ser usado em TD-->
+<!--ATRIBUTO colspan = preenche o tamanho da celula de acordo com a quantidade atribuida-->
+<!--ATRIBUTO cellspacing = determina a margem interna da tabela-->
+<!--ATRIBUTO cellpadding = determina a margem interna de uma celula-->
+<!--ATRIBUTO valign = altera o alinhamento vertical do conteudo de uma celula, sendo top, center, bottom-->
+<!--ATRIBUTO rowspan = mescla uma celula em linhas-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando uma tabela</title>
+</head>
+<body>
+    <table 
+    border="3"
+    bordercolor="#c4z4c4"
+    bgcolor="#c9b2b2"
+    ><!--A TAG TABLE RECEBE TAMBEM VÁRIOS ATRIBUTOS DENTRO DELA-->
+        <tr><!--UMA TABELA É COMPOSTA POR LINHAS E COLUNAS, ELAS SÃO REPRESENTADAS PELAS TAGS TD(CÉLULA) E TR(LINHA)-->
+            <td><b>Nome</b></td>
+            <td><b>Sobrenome</b></td>
+        <tr>
+            <td bgcolor="#f99f">Anna</td>
+            <td bgcolor="#z9fff">dos Santos</td>
+        <tr bgcolor="#fffff">
+            <td>Danilo</td>
+            <td>Cucharro</td>
+    </table><br>
+
+    <table 
+    border="3"
+    bordercolor="#c4z4c4"
+    background="../img/pikachu.png"
+    ><!--A TAG TABLE RECEBE TAMBEM VÁRIOS ATRIBUTOS DENTRO DELA-->
+        <tr><!--UMA TABELA É COMPOSTA POR LINHAS E COLUNAS, ELAS SÃO REPRESENTADAS PELAS TAGS TD(CÉLULA) E TR(LINHA)-->
+            <td><b>Nome</b></td>
+            <td><b>Sobrenome</b></td>
+        <tr>
+            <td>Anna</td>
+            <td>dos Santos</td>
+        <tr>
+            <td>Danilo</td>
+            <td>Cucharro</td>
+    </table><br>
+
+    <table 
+    border="3"
+    width="300px"
+    height="20%"
+    >
+        <tr bgcolor="#z9fff">
+            <td><b>Nome</b></td>
+            <td><b>Sobrenome</b></td>
+        <tr>
+            <td>Danilo</td>
+            <td>Cucharro</td>
+        <tr bgcolor="#z9fff">
+            <td>Allan</td>
+            <td>Patrick</td>
+    </table><br>
+
+    <table
+    border="4"
+    cellspacing="10"
+    width="300"
+    height="25%"
+    cellpadding="7"
+    >
+    <tr bgcolor="#c1b353">
+        <td align="center" colspan="2"><b>Cadastro de Clientes</b></td>
+    <tr bgcolor="#c4c4c4">
+        <td><b>Nome</b></td>
+        <td><b>Sobrenome</b></td>
+    <tr>
+        <td>Pedro</td>
+        <td>Ailton</td>
+    <tr bgcolor="#c4c4c4">
+        <td>Aline</td>
+        <td>Kamazo</td>
+    <tr>
+        <td>Allanis</td>
+        <td>Silva</td>
+    </table>
+</body>
+</html>
