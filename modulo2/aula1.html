@@ -1,0 +1,86 @@
+<!--ATRIBUTO action = especifica a URL que irá processar os dados coletados pelo formulario-->
+<!--ATRIBUTO method = especifica a maneira em que os dados serão enviados para o servidor web para que sejam processados-->
+<!--MÉTODO POST = o navegador enviará os dados do formulário direto para o script no servidor que irá processa-los-->
+<!--MÉTODO GET = o navegador enviará os dados do formulário pela URL da página web-->
+<!--ATRIBUTO type = especifica o tipo de dado que será inserido na tag input (padrão é text)-->
+<!--ATRIBUTO value = especifica o valor inicial dentro do campo de entrada input, 
+    também é usado obrigatoriamente nos campos de entrada "radio" e "checkbox"-->
+<!--ATRIBUTO name = nomeia um campo para depois ser manipulado por scripts-->
+<!--ATRIBUTO maxlenght = estabelece um valor limitado para um campo de texto ou senha-->
+<!--ATRIBUTO src = quando o campo de entrada for do type imagem(image) esse atributo irá
+     conter a localização da imagem para decoração do botão enviarespecificar -->
+<!--ATRIBUTO checked = quando o type é "radio" ou "checkbox" esse atributo irá fazer com que o campo estaja selecionado-->
+<!--ATRIBUTO size = altera a largura do campo-->
+<!--TYPE reset = cria um botão que limpa todos os outros campos preenchidos do form-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando e formatando formulários</title>
+</head>
+<body>
+    <form
+    action="email@email.com"
+    method="get"
+    >
+        <p>Nome:
+            <input type="text" name="nome" size="25" maxlength="50">
+        </p>
+        <p>Estado:
+            <input type="text" name="uf" size="2" value="SP">
+        </p>
+        <p>Nº do cartão de crédito:
+            <input type="text" name="numCartao" size="16">
+        </p>
+        <p>Senha:
+            <input type="password" name="senha" size="6">
+        </p>
+        <p>Selecione a bandeira do cartão de crédito: <br>
+            <input type="radio" name="bandeiraCartao" checked>VISA <br>
+            <input type="radio" name="bandeiraCartao">MASTERCARD
+        </p>
+        <p>Selecione o horário de entrega: <br>
+            <input type="checkbox" name="horario" checked>8h às 12h <br>
+            <input type="checkbox" name="horario">13h às 17h <br>
+            <input type="checkbox" name="horario">18h às 22h
+        </p>
+        <p>Endereço: <br>
+            <textarea name="endereco" cols="40" rows="2"></textarea>
+        </p>
+        <p>Referência: <br>
+            <textarea name="referencia" cols="30" rows="10"></textarea>
+ -      </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <input type="hidden" name="cpf" value="verdadeiro">
+    </form><br><br>
+
+    <h3>Exemplo lista de opções</h3>
+    <h4>Escolha uma cidade:</h4>
+
+    <form action="" method="get">
+        <select name="cidades">
+            <option value="londres">Londres</option>
+            <option value="Madri">Madri</option>
+            <option value="ny">Nova York</option>
+            <option value="embu">Embu das Artes</option>
+        </select>
+    </form><br><br>
+
+    <h3>Exemplo lista de opções</h3>
+    <h4>Escolha uma cidade:</h4>
+
+    <form action="" method="get">
+        <select name="cidades" size="4">
+            <option value="londres">Londres</option>
+            <option value="Madri">Madri</option>
+            <option value="ny">Nova York</option>
+            <option value="embu">Embu das Artes</option>
+        </select>
+    </form>
+</body>
+</html>
